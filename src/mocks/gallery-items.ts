@@ -1,7 +1,7 @@
 import { Category } from 'types/categories.types';
 import { IGalleryItem } from 'types/gallery-items.types';
 
-export const galeryItems: IGalleryItem[] = [
+export const galleryItems: IGalleryItem[] = [
     {
         id: 1,
         category: Category.Design,

@@ -6,4 +6,6 @@ export interface IGalleryProps {
     isDesktop: boolean;
     handleActiveCategoryChange: (category: Category) => void;
     handleCardDelete: (id: number) => void;
+    handleMoreButtonClick: () => void;
+    isMoreButtonVisible: boolean;
 }

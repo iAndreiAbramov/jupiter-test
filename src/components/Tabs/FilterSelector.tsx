@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { cn } from '@bem-react/classname';
 import { useCloseByClick } from 'hooks/useCloseByClick';
 import { useCloseByEsc } from 'hooks/useCloseByEsc';
+import { ReactComponent as Triangle } from 'svg/triangle.svg';
 
 import { Tab } from 'components/Tab';
 
@@ -34,7 +35,7 @@ export const FilterSelector: React.FC<IFilterSelectorProps> = ({
         <>
             {isDesktop ? (
                 <div className="tabs container">
-                    {categories.length > 0 &&
+                    {categories?.length > 0 &&
                         categories.map((category) => (
                             <Tab
                                 key={category}
@@ -49,12 +50,22 @@ export const FilterSelector: React.FC<IFilterSelectorProps> = ({
                     <div
                         className={CnSelect('window')}
                         onClick={handleWindowClick}
+                        tabIndex={0}
                     >
-                        {activeCategory}
+                        <span>{activeCategory}</span>
+                        <span
+                            style={
+                                isDropdownShown
+                                    ? { transform: 'rotate(180deg)' }
+                                    : { transform: 'rotate(0)' }
+                            }
+                        >
+                            <Triangle />
+                        </span>
                     </div>
                     {isDropdownShown && (
                         <div className={CnSelect('dropdown')}>
-                            {categories.length > 0 &&
+                            {categories?.length > 0 &&
                                 categories.map((category) => (
                                     <span
                                         key={category}

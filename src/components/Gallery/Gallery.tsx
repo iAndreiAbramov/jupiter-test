@@ -14,6 +14,8 @@ export const Gallery: React.FC<IGalleryProps> = ({
     isDesktop,
     handleActiveCategoryChange,
     handleCardDelete,
+    handleMoreButtonClick,
+    isMoreButtonVisible,
 }) => {
     return (
         <section className={`${CnGallery()} container`}>
@@ -32,6 +34,14 @@ export const Gallery: React.FC<IGalleryProps> = ({
                         />
                     ))}
             </div>
+            {isMoreButtonVisible && (
+                <button
+                    className={CnGallery('moreButton')}
+                    onClick={handleMoreButtonClick}
+                >
+                    Load More
+                </button>
+            )}
         </section>
     );
 };

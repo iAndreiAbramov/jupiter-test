@@ -22,6 +22,10 @@
 
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     height: auto;
     padding: 18px;
     width: 330px;
@@ -37,6 +41,14 @@
 
     &:focus {
         outline: 1px solid #f3d1bf;
+    }
+
+    & span {
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
     }
 }
 
@@ -62,6 +74,11 @@
     font-size: 16px;
     color: $fc-dark;
     font-weight: 400;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .select-option {
