@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { Promo } from 'components/Promo';
+
 export const HomePage: React.FC = () => {
-    return <div>Home page</div>;
+    return (
+        <>
+            <Promo />
+        </>
+    );
 };

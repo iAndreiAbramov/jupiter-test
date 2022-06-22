@@ -1,0 +1,36 @@
+@import '../../variables';
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 170px;
+}
+
+.pageHeader-button {
+    width: 138px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+
+    font-size: 14px;
+    color: $fc-light;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: all 0.3s linear;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+
+    @media (max-width: $break-mobile-top) {
+        display: none;
+    }
+}
