@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7" width="11" height="7">
+    <defs>
+        <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+            <path d="m-325-452h375v4400h-375z"/>
+        </clipPath>
+    </defs>
+    <style>.a{fill:#ef6d58}</style>
+    <g clip-path="url(#cp1)">
+        <path class="a" d="m1 1h10l-5 6z"/>
+    </g>
+</svg>

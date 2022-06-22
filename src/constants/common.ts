@@ -1,0 +1,1 @@
+export const DESKTOP_START_WIDTH_PX = 1040;
