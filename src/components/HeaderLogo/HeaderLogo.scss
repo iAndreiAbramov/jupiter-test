@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    max-width: 150px;
+
+    & svg {
+        flex: 0 0 46px;
+    }
+}
+
+.logoText {
+    font-size: 24px;
+    line-height: 32px;
+    color: $fc-light;
+    font-weight: 700;
+}

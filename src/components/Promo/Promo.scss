@@ -1,0 +1,56 @@
+@import '../../variables';
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $bgc-header;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 75px;
+    padding-top: 15px;
+
+    @media (max-width: $break-mobile-top) {
+        padding-top: 10px;
+        padding-bottom: 90px;
+    }
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-width: $break-mobile-top) {
+        gap: 35px;
+    }
+}
+
+.promo-title {
+    font-size: 72px;
+    letter-spacing: -2px;
+    color: $fc-light;
+    font-weight: 800;
+    text-align: center;
+
+    @media (max-width: $break-mobile-top) {
+        font-size: 56px;
+        letter-spacing: -1px;
+    }
+}
+
+.promo-text {
+    max-width: 570px;
+    font-size: 16px;
+    line-height: 2;
+    color: $fc-light;
+    font-weight: 400;
+    text-align: center;
+
+    @media (max-width: $break-mobile-top) {
+        max-width: 285px;
+    }
+}
