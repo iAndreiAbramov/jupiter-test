@@ -1,10 +1,4 @@
-export enum Category {
-    All = 'Show All',
-    Design = 'Design',
-    Branding = 'Branding',
-    Illustration = 'Illustration',
-    Motion = 'Motion',
-}
+import { Category } from 'types/categories.types';
 
 export const categories: Category[] = [
     Category.All,

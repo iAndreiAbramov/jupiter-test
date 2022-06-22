@@ -14,8 +14,8 @@ export const Promo: React.FC = () => {
             <div className={CnPromo('content')}>
                 <h1 className={CnPromo('title')}>Portfolio</h1>
                 <span className={CnPromo('text')}>
-                    Agency provides a full service range including technical skills, design,
-                    business understanding.
+                    Agency provides a full service range including technical
+                    skills, design, business understanding.
                 </span>
             </div>
         </div>

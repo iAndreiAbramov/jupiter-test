@@ -6,6 +6,11 @@
     font-weight: 400;
     cursor: pointer;
 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     transition: all 0.2s linear;
 
     @media (max-width: $break-mobile-top) {

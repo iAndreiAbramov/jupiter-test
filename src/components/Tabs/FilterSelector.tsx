@@ -1,19 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import { cn } from '@bem-react/classname';
-import { Category } from 'constants/categories';
 import { useCloseByClick } from 'hooks/useCloseByClick';
 import { useCloseByEsc } from 'hooks/useCloseByEsc';
 
 import { Tab } from 'components/Tab';
 
-import './FilterSelector.scss';
+import { IFilterSelectorProps } from './FilterSelector.types';
 
-interface IFilterSelectorProps {
-    categories: Category[];
-    activeCategory: Category | string;
-    handleActiveCategoryChange: (category: Category) => void;
-    isDesktop: boolean;
-}
+import './FilterSelector.scss';
 
 const CnSelect = cn('select');
 
@@ -23,7 +17,7 @@ export const FilterSelector: React.FC<IFilterSelectorProps> = ({
     handleActiveCategoryChange,
     isDesktop,
 }) => {
-    const [isDropdownShown, setIsDropdownShown] = useState(true);
+    const [isDropdownShown, setIsDropdownShown] = useState(false);
 
     const handleWindowClick = useCallback(() => {
         setIsDropdownShown((current) => !current);

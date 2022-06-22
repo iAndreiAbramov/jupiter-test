@@ -11,6 +11,8 @@ export const useInnerWidth = (cb: Dispatch<SetStateAction<boolean>>): void => {
             }
         };
 
+        handleResize();
+
         window.addEventListener('resize', handleResize);
 
         return () => {
